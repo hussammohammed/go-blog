@@ -11,7 +11,7 @@ return ":" + port
 }
 
 func main(){
-	router:= gin.Default()
+router:= gin.Default()
 	port:=getPort()
 	log("port is" + port)
 	router.Run(port)
